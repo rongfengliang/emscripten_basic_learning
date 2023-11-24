@@ -7,7 +7,7 @@
 ```code
 docker run -it -v $PWD:/src  emscripten/emsdk:3.1.47 sh
 
-cd /opt/app/build
+mkdir build
 
 emcmake cmake ..
 
