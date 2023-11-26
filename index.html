@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>demo</title>
-    <script src="build/myadd.js"></script>
-</head>
-
-<body>
-    <script>
-        Module().then((instance) => {
-            console.log(instance._dalongdemoadd(1, 3)); // direct calling works
-        })
-
-    </script>
-</body>
-
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World - Go</title>
+  </head>
+  <body>
+    <!-- 
+    The wasm_exec.js must come before our Javascript (index.js), 
+    as it defines some global objects 
+    -->
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "name": "cmake-emcc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rongfengliang/emscripten_basic_learning.git",
+  "author": "rongfengliang <1141591465@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.2"
+  },
+  "scripts": {
+    "start":"vite "
+  }
+}

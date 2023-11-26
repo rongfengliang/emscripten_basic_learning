@@ -16,3 +16,7 @@ EMSCRIPTEN_KEEPALIVE
 int  mysub(int a,int b){
    return  sub(a,b);
 }
+EMSCRIPTEN_KEEPALIVE
+char * print_name(char * name){
+    return name;
+}
