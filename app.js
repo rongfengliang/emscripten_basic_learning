@@ -5,3 +5,9 @@ app().then((instance) => {
   console.log(sub_result); 
 
 })
+
+
+const dalong = require("./build/mydalong")
+dalong().then((instance) => {
+  console.log(instance._dalong(1,3));
+})

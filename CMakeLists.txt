@@ -9,4 +9,9 @@ set(TD_LINKER_FLAGS "-Wl,--gc-sections -Wl,--exclude-libs,ALL")
 
 add_executable(myadd src/add.c src/sub.c)
 
-target_link_libraries(myadd "-s MODULARIZE=1 -s EXPORTED_RUNTIME_METHODS=ccall")
+add_executable(mydalong src/dalong.c)
+
+target_link_libraries(myadd "-s MODULARIZE=1 -s EXPORTED_RUNTIME_METHODS=ccall,UTF8ToString,lengthBytesUTF8,stringToUTF8")
+
+target_link_libraries(mydalong "-s MODULARIZE=1 -s EXPORTED_RUNTIME_METHODS=ccall,UTF8ToString,lengthBytesUTF8,stringToUTF8")
+
