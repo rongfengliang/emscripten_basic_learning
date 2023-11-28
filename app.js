@@ -11,3 +11,10 @@ const dalong = require("./build/mydalong")
 dalong().then((instance) => {
   console.log(instance._dalong(1,3));
 })
+
+const jssub = require("./build/jssub")
+jssub().then((instance) => {
+  console.log(instance._subapp(33,1))
+})
+
+

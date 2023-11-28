@@ -19,4 +19,9 @@ make
 
 ```code
 emcc add.c -o myaddv2.js -sMODULARIZE -sEXPORTED_RUNTIME_METHODS=ccall
+
+
+emcc add.c -o myaddv3.js --js-library sub_library.js
+
+emcc sub.c -o mysubjs.js  -sMODULARIZE -sEXPORTED_RUNTIME_METHODS=ccall
 ```
